@@ -36,6 +36,7 @@ public class GameEnding : MonoBehaviour
         if(m_IsPlayerAtExit)
         {
             EndLevel(exitBackgroundImageCanvasGroup, false, exitAudio);
+            SceneManager.LoadScene(1);
         }
         else if(m_IsPlayerCaught)
         {
@@ -56,7 +57,7 @@ public class GameEnding : MonoBehaviour
         {
             if(doRestart)
             {
-                SceneManager.LoadScene(0);
+                SceneManager.LoadScene(1);
             }
             else
             {
